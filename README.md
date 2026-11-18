@@ -2,6 +2,40 @@
 
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench]. 
 
+## Edit and preview in GitHub Codespaces
+
+1. Open [this repository](https://github.com/tcobanoglu/AIforMolSci), select the `main` branch, then choose **Code → Codespaces → Create codespace on main**.
+2. Wait for the container setup to finish. R and the Carpentries Workbench packages are already included.
+3. Open **Terminal → New Terminal** and run:
+
+   ```bash
+   bash .devcontainer/preview.sh
+   ```
+
+4. Open **Course preview** on port **4321** when prompted. If the browser does not open automatically, use the **Ports** tab and choose **Open in Browser** for port 4321.
+
+Keep the terminal running while editing. The preview rebuilds when you save a lesson file. Press **Ctrl+C** in the terminal to stop it.
+
+Edit `index.md` for the homepage, `episodes/introduction.md` for the first lesson, `learners/setup.md` for setup instructions, and `config.yaml` for the course title and navigation.
+
+This repository uses the Carpentries Workbench. Its preview command uses R and Sandpaper.
+
+### Use an existing codespace
+
+If your codespace was created before this configuration was added, first run `git pull --ff-only origin main`. Then open the Command Palette and choose **Codespaces: Rebuild Container**. After it finishes, run the preview command above.
+
+### Save changes to GitHub
+
+Saving a file updates your private preview. To share changes with collaborators and update the published [course website](https://tcobanoglu.github.io/AIforMolSci/), commit and push your source files:
+
+```bash
+git add .
+git commit -m "Update course content"
+git push origin main
+```
+
+Each collaborator can create their own codespace from this repository. Stop the codespace from the Codespaces menu when you finish working.
+
 ## Note about lesson life cycle stage
 Although the `config.yaml` states the life cycle stage as pre-alpha, **the template is stable and ready to use**. The life cycle stage is preset to `"pre-alpha"` as this setting is appropriate for new lessons initialised using the template.
 
