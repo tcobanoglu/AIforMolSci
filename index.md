@@ -2,12 +2,12 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is a new lesson built with [The Carpentries Workbench][workbench]. 
+This is an AI for Molecular Sciences lesson built with [The Carpentries Workbench][workbench]. 
 
 
 [workbench]: https://carpentries.github.io/sandpaper-docs
 
-## Prerequisits 
+## Prerequisits  
 - Basic data organisation 
 - Introductory python 
 - Domain knowledge molecular science
